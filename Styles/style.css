@@ -420,6 +420,7 @@ main {
 
 .section-5-container {
   background: rgba(255, 255, 255, 0.144);
+  margin-bottom: 60px;
 }
 .section-5-inner-container {
   display: flex;
@@ -541,8 +542,56 @@ form input {
   right: 20px;
   margin-top: -8px;
 }
-.section-5-btn{
+.section-5-btn {
   align-self: flex-start;
+}
+/*
+!---------------------------------------section-6-----------------------------
+*/
+.section-6-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.section-6-text {
+  width: 60%;
+  align-self: center;
+  margin-bottom: 20px;
+}
+.boys-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 300px);
+
+  gap: 20px;
+  background: rgba(255, 255, 255, 0.144);
+  padding: 20px;
+  border-radius: 18px;
+}
+.boy {
+  position: relative;
+  border-radius: 18px;
+}
+.boy::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.386);
+  top: 0;
+  left: 0;
+  border-radius: 18px;
+}
+.boy img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 18px;
+}
+.info {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
 }
 
 /*
