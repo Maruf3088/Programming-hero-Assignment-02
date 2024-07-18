@@ -1,0 +1,132 @@
+@media (max-width: 577px) {
+  /*
+!------------------------------------------Common Class----------------------------------
+*/
+  .container {
+    max-width: 90%;
+  }
+  .heading {
+    font-size: 35px;
+  }
+  .title {
+    font-size: 35px;
+  }
+  .sub-title {
+    font-size: 18px;
+  }
+  .btn {
+    font-size: 3vw;
+    padding: 13px 25px;
+  }
+  /*!----------------------------------navber---------------------*/
+  .menu-toggle {
+    display: block;
+    font-size: 28px;
+    color: white;
+  }
+  .nav-elements {
+    display: none;
+  }
+  /*!--------------------------------------banner--------------------------*/
+  .banner-container {
+    flex-direction: column;
+  }
+  .banner-left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+  .banner-right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .banner-paragraph {
+    width: 100%;
+  }
+
+  /*
+!------------------------------------------Section-1----------------------------------
+*/
+  .section-1-text {
+    width: 100%;
+    align-self: center;
+    margin-bottom: 30px;
+  }
+  .circle-container {
+    flex-direction: column;
+  }
+  .circle-text {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  /*
+!------------------------------------------Section-2----------------------------------
+*/
+
+  .section-2-container {
+    flex-direction: column;
+
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .section-2-left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .section-2-right {
+    width: 100%;
+  }
+  .section-2-btn {
+    align-self: normal;
+    margin-bottom: 10px;
+  }
+  .section-2-text {
+    width: 95%;
+  }
+
+  /*
+!------------------------------------------Section-3----------------------------------
+*/
+.section-3-text {
+  width: 90%;
+  
+}
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-rows: 200px 200px;
+  }
+  .card-2 {
+    grid-column: span 1;
+  }
+  .card-4 {
+    grid-column: span 1;
+  }
+  .card-5 {
+    display: none;
+  }
+  .card-6 {
+    display: none;
+  }
+  .label-4 {
+    top: 10px;
+    left: 20px;
+  }
+  /*
+!------------------------------------------Section-4---------------------------------
+*/
+  /*
+!------------------------------------------Section-5----------------------------------
+*/
+  /*
+!------------------------------------------Footer---------------------------------
+*/
+}
