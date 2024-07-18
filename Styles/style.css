@@ -424,13 +424,12 @@ main {
 .section-5-inner-container {
   display: flex;
   gap: 20px;
-  height: 30vw;
   padding: 50px 0;
 }
 .section-5-left {
   width: 40%;
   display: flex;
-  gap: 30px;
+  gap: 25px;
   flex-direction: column;
 }
 table {
@@ -458,7 +457,7 @@ td {
   padding: 0 60px;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 25px;
 }
 .chart-title {
   font-size: 28px;
@@ -475,7 +474,6 @@ td {
 }
 
 form input {
-  color: rgba(255, 255, 255, 0.5);
   width: 49%;
   outline: none;
   border: none;
@@ -483,6 +481,9 @@ form input {
   background: rgba(255, 255, 255, 0.144);
   border-radius: 8px;
   margin-bottom: 10px;
+}
+::placeholder {
+  color: rgba(255, 255, 255, 0.5);
 }
 .select-1 {
   display: inline-block;
@@ -539,6 +540,9 @@ form input {
   top: 50%;
   right: 20px;
   margin-top: -8px;
+}
+.section-5-btn{
+  align-self: flex-start;
 }
 
 /*
