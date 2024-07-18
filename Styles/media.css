@@ -46,6 +46,15 @@
   .banner-paragraph {
     width: 100%;
   }
+  .box-1-num {
+    font-size: 20px;
+  }
+  .box-1-text{
+    font-size: 12px;
+  }
+  .box-2 i {
+    font-size: 2rem;
+  }
 
   /*
 !------------------------------------------Section-1----------------------------------
@@ -157,4 +166,24 @@
   /*
 !------------------------------------------Footer---------------------------------
 */
+  .footer-up {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+  .footer-text {
+    width: 100%;
+    line-height: 20px;
+  }
+  .footer-logo {
+    font-size: 50px;
+  }
+  .footer-right-1 ul,
+  .footer-right-2 ul {
+    gap: 5px;
+    font-size: 18px;
+  }
+  .footer-down {
+    font-size: 18px;
+  }
 }
