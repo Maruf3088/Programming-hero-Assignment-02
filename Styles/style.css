@@ -13,6 +13,7 @@
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
   list-style-type: none;
+  color: white;
 }
 body,
 html {
@@ -111,13 +112,18 @@ header {
   transition: all 0.3s ease;
 }
 .nav-elements li a:hover {
-  color: black;
+  color: var(--primary-color);
 }
 .first-element {
   background-color: var(--primary-color);
   padding: 8px 15px;
   border-radius: 30px;
+  color: white;
 }
+.nav-elements li a:hover.first-element {
+  color: black;
+}
+
 .last-element {
   padding: 8px 15px;
 }
@@ -130,6 +136,7 @@ header {
 .span-1 {
   font-family: var(--font-1);
   font-weight: 400;
+  font-size: 128px;
 }
 
 .banner-container {
@@ -147,6 +154,9 @@ header {
   display: flex;
   justify-content: center;
   position: relative;
+}
+.banner-title {
+  line-height: 80px;
 }
 .banner-paragraph {
   width: 80%;
@@ -241,9 +251,8 @@ main {
 }
 .circle-img img:hover {
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.7),
-    /* Small inner glow */ 0 0 20px rgba(255, 255, 255, 0.6),
-    /* Medium glow */ 0 0 30px rgba(255, 255, 255, 0.5),
-    /* Large outer glow */ 0 0 40px rgba(255, 255, 255, 0.4); /* Very large outer glow */
+    0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.5),
+    0 0 40px rgba(255, 255, 255, 0.4);
 }
 
 /*
@@ -445,7 +454,7 @@ main {
 }
 .section-5-inner-container {
   display: flex;
-  gap: 20px;
+  gap: 50px;
   padding: 50px 0;
 }
 .section-5-left {
@@ -476,7 +485,8 @@ td {
 
 .section-5-right {
   width: 60%;
-  padding: 0 60px;
+  justify-content: flex-end;
+  padding-left: 100px;
   display: flex;
   flex-direction: column;
   gap: 25px;
@@ -626,6 +636,99 @@ form input {
 }
 
 /*
+!------------------------------------------Section-7---------------------------------
+*/
+.section-7-container{
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  background-color: #151515;
+  gap: 20px;
+}
+.section-7-text{
+  width: 50%;
+  align-self: center;
+  margin-bottom:15px ;
+}
+.sec-7-card-container{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  background-color: #222222;
+
+  width: 30%;
+  height: 520px;
+  justify-content: space-around;
+  padding: 20px;
+  transition: all .3s ease-in-out;
+}
+.card:hover{
+  background-color: var(--primary-color);
+  color: white;
+}
+.card:hover .card-info i{
+color: white;
+}
+.card:hover .card-price{
+color: white;
+}
+.card:hover .doller-sign{
+color: white;
+}
+.card:hover .section-7-btn{
+background-color: #222222;
+}
+.card:hover .card-text-1{
+color: white;
+}
+.card-title{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+}
+.card-text-1{
+  font-weight:bolder ;
+  color: var(--primary-color);
+}
+.card-text-2{
+  font-weight:700 ;
+  font-size: 1.7rem;
+  letter-spacing: .1rem;
+}
+.card-price{
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+
+}
+.doller-sign{
+  font-size: 2rem;
+  color: var(--primary-color);
+
+}
+.card-info{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-self: center;
+}
+
+.card-info i{
+  color: var(--primary-color);
+  font-size: 1.2rem;
+}
+.section-7-btn{
+  align-self: center;
+  border-radius: 0px;
+  margin-top: 20px;
+}
+/*
 !------------------------------------------Footer---------------------------------
 */
 footer {
@@ -648,7 +751,7 @@ footer {
   gap: 20px;
 }
 .footer-logo {
-  font-size: 60px;
+  font-size: 50px;
 }
 .footer-text {
   width: 80%;
@@ -665,16 +768,16 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 400;
   cursor: pointer;
 }
 .right-1-title {
-  font-size: 32px;
+  font-size: 25px;
   font-weight: 700;
 }
 .footer-down {
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 400;
   margin-top: 30px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);

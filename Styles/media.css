@@ -43,6 +43,9 @@
     display: flex;
     justify-content: center;
   }
+  .banner-title{
+    line-height: 40px;
+  }
   .banner-paragraph {
     width: 100%;
   }
@@ -55,6 +58,10 @@
   .box-2 i {
     font-size: 2rem;
   }
+  .span-1 {
+    font-size: 88px;
+  }
+  
 
   /*
 !------------------------------------------Section-1----------------------------------
@@ -164,6 +171,37 @@
   }
 
   /*
+!------------------------------------------Section-7---------------------------------
+*/
+.section-7-text{
+  width: 98%;
+  font-size: 15px;
+}
+.sec-7-card-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  background-color: #222222;
+  width: 80%;
+  height: 520px;
+  justify-content: space-around;
+  padding: 20px;
+  transition: all .3s ease-in-out;
+}
+.card-price{
+  
+  font-size: 4rem;
+  
+
+}
+
+  /*
 !------------------------------------------Footer---------------------------------
 */
   .footer-up {
@@ -184,6 +222,6 @@
     font-size: 18px;
   }
   .footer-down {
-    font-size: 18px;
+    font-size: 14px;
   }
 }
