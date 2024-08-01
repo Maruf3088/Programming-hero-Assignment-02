@@ -151,6 +151,7 @@ header {
 }
 .banner-right {
   width: 40%;
+  height: 600px;
   display: flex;
   justify-content: center;
   position: relative;
